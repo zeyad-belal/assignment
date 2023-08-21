@@ -1,0 +1,100 @@
+<nav class="bg-white w-[250px] py-[18px] font-medium overflow-hidden">
+  <img class="mr-[54px] ml-[41px]" src="../../assets/images/Group 80.png" alt="">
+
+  <ul class="lg:mt-12 text-primary flex flex-col items-start mx-[22px]">
+    <li class="text-primary">
+      <h4 class="text-secondary flex justify-start text-[12px]">الرئيسية</h4>
+      <ul class="flex flex-col items-end ">
+        <li class="cursor-pointer flex  items-end text-left">
+          <span class="flex text-[13.5px] py-[15px]">
+            <div class="relative">
+              <img class="ml-[20px] z-20 relative"  src="./../../assets/images/home.png" alt="">
+            </div>
+            الرئيسية <span class="opacity-0"> ... </span>
+          </span>
+        </li>
+
+        <li class="cursor-pointer py-[10px]">
+          <span class="flex text-[13.5px]" (click)="toggleDropdown('menu1')">
+            <div class="relative">
+              <img class="ml-[20px] z-20 relative" src="./../../assets/images/home.png" alt="">
+              <span *ngIf="menu1Dropdown" class="transition-all duration-300 absolute z-10 top-[-50%] left-[8px] w-[57px] h-[200%] rounded-tl-[50%] rounded-bl-[50%]  bg-myYellow"></span>
+            </div>
+            منيو رقم 1
+          </span>
+        </li>
+        <ul [ngClass]="{'max-h-0': !menu1Dropdown, 'max-h-[300px]': menu1Dropdown}" class="flex flex-col items-end gap-[10px] pr-[33px] mr-[26px] border-r border-E9E9E9 my-[5px] transition-max-h duration-300 overflow-hidden">
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+        </ul>
+
+
+        <li class="cursor-pointer py-[10px]">
+          <span class="flex text-[13.5px]" (click)="toggleDropdown('menu2')">
+            <div class="relative">
+              <img class="ml-[20px] z-20 relative" src="./../../assets/images/home.png" alt="">
+              <span *ngIf="menu2Dropdown" class="absolute z-10 top-[-50%] left-[5px] w-[140%] h-[200%] rounded-tl-[50%] rounded-bl-[50%]  bg-myYellow"></span>
+            </div>
+            منيو رقم 2
+          </span>
+        </li>
+        <ul [ngClass]="{'max-h-0': !menu2Dropdown, 'max-h-[300px]': menu2Dropdown}" class="flex flex-col items-end gap-[10px] pr-[33px] mr-[26px] border-r border-E9E9E9 my-[5px] transition-max-h duration-300 overflow-hidden">
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+        </ul>
+
+        <li class="cursor-pointer py-[10px]">
+          <span class="flex text-[13.5px]" (click)="toggleDropdown('menu3')">
+            <div class="relative">
+              <img class="ml-[20px] z-20 relative" src="./../../assets/images/home.png" alt="">
+              <span *ngIf="menu3Dropdown" class="absolute z-10 top-[-50%] left-[5px] w-[140%] h-[200%] rounded-tl-[50%] rounded-bl-[50%]  bg-myYellow"></span>
+            </div>
+            منيو رقم 3
+          </span>
+
+        </li>
+        <ul [ngClass]="{'max-h-0': !menu3Dropdown, 'max-h-[300px]': menu3Dropdown}" class="flex flex-col items-end gap-[10px] pr-[33px] mr-[26px] border-r border-E9E9E9 my-[5px] transition-max-h duration-300 overflow-hidden">
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+        </ul>
+
+        <li class="cursor-pointer py-[10px]">
+          <span class="flex text-[13.5px]" (click)="toggleDropdown('menu4')">
+            <div class="relative">
+              <img class="ml-[20px] z-20 relative" src="./../../assets/images/home.png" alt="">
+              <span *ngIf="menu4Dropdown" class="absolute z-10 top-[-50%] left-[5px] w-[140%] h-[200%] rounded-tl-[50%] rounded-bl-[50%]  bg-myYellow"></span>
+            </div>
+            منيو رقم 4
+          </span>
+        </li>
+        <ul [ngClass]="{'max-h-0': !menu4Dropdown, 'max-h-[300px]': menu4Dropdown}" class="flex flex-col items-end gap-[10px] pr-[33px] mr-[26px] border-r border-E9E9E9 my-[5px] transition-max-h duration-300 overflow-hidden">
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+          <li class="text-[10.5px] cursor-pointer">منيو ميني</li>
+        </ul>
+
+      </ul>
+    </li>
+
+    <li class="text-primary mt-[5px]">
+      <h4 class="text-secondary flex justify-start  text-[12px]">الحساب</h4>
+      <ul class="flex flex-col items-end justify-center">
+        <li class="cursor-pointer py-[20px]">
+          <span class="flex text-[13.5px]" >
+            <img class="ml-[20px] z-20" src="./../../assets/images/info-circle.png" alt="">
+            المساعدة
+          </span>
+        </li>
+        <li class="cursor-pointer py-[20px]">
+          <span class="flex text-[13.5px]" >
+            <img class="ml-[20px] z-20" src="./../../assets/images/setting-2.png" alt="">
+            الإعدادات
+          </span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
